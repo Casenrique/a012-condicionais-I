@@ -1,15 +1,17 @@
-const nacionalidade = prompt("Escreva aqui sua nacionalidade")
+let nacionalidade = prompt("Escreva aqui sua nacionalidade")
+let nacionalidadeCorrigido = nacionalidade.toLowerCase().replace("o", "a")
 
-if (nacionalidade === "brasileira"){
-    console.log(`Sua nacionalidade é ${nacionalidade}`)
-} else if(nacionalidade === "argentina"){
-    console.log(`Sua nacionalidade é ${nacionalidade}`)
-} else if (nacionalidade === "uruguaia"){
-    console.log(`Sua nacionalidade é ${nacionalidade}`)
-} else if (nacionalidade === "chilena"){
-    console.log(`Sua nacionalidade é ${nacionalidade}`)
-} else if (nacionalidade === "colombiana"){
-    console.log(`Sua nacionalidade é ${nacionalidade}`)
-} else {
-    console.log(`Nacionalidade não encontrada!`)
+
+if (nacionalidadeCorrigido === "brasileira"){
+    console.log(`Sua nacionalidade é ${nacionalidadeCorrigido}.`)
+}   else if(nacionalidadeCorrigido === "argentina"){
+        console.log(`Sua nacionalidade é ${nacionalidade}.`)
+}       else if (nacionalidadeCorrigido === "uruguaia"){
+            console.log(`Sua nacionalidade é ${nacionalidade}.`)
+}           else if (nacionalidadeCorrigido === "chilena"){
+                console.log(`Sua nacionalidade é ${nacionalidade}.`)
+}                   else if (nacionalidadeCorrigido === "colombiana"){
+                        console.log(`Sua nacionalidade é ${nacionalidade}.`)
+}                            else {
+                                console.log(`Nacionalidade não encontrada!`)
 }
